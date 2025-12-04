@@ -1,0 +1,18 @@
+export const theme = {
+  primary: '#4361ee',
+  primaryDark: '#3a56d4',
+  secondary: '#f8f9fa',
+  secondaryDark: '#e9ecef',
+  success: '#4cc9f0',
+  successDark: '#2ec4b6',
+  danger: '#ef476f',
+  dangerDark: '#d43a5e',
+  warning: '#ffd166',
+  text: '#212529',
+  textSecondary: '#6c757d',
+  bg: '#f8f9fa',
+  cardBg: '#ffffff',
+  navBg: '#ffffff',
+  border: '#dee2e6',
+  shadow: '0 2px 4px rgba(0,0,0,0.1)',
+};
