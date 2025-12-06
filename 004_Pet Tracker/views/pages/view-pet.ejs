@@ -1,0 +1,55 @@
+<% layout('layout') -%>
+<% let title = pet.name %>
+
+<div class="pet-detail">
+    <div class="pet-header">
+        <h2><%= pet.name %></h2>
+        <div class="pet-actions">
+            <a href="/pets/edit/<%= pet._id %>" class="btn btn-outline">Edit</a>
+            <a href="/pets" class="btn btn-outline">Back to List</a>
+        </div>
+    </div>
+
+    <div class="pet-info-grid">
+        <div class="info-card">
+            <h3><i class="fas fa-info-circle"></i> Basic Info</h3>
+            <p><strong>Type:</strong> <%= pet.type %></p>
+            <% if (pet.breed) { %>
+                <p><strong>Breed:</strong> <%= pet.breed %></p>
+            <% } %>
+            <% if (pet.age) { %>
+                <p><strong>Age:</strong> <%= pet.age %> years</p>
+            <% } %>
+            <% if (pet.weight) { %>
+                <p><strong>Weight:</strong> <%= pet.weight %> kg</p>
+            <% } %>
+        </div>
+
+        <div class="info-card">
+            <h3><i class="fas fa-calendar-alt"></i> Schedule</h3>
+            <p><strong>Last Fed:</strong> <%= new Date(pet.lastFed).toLocaleDateString() %></p>
+            <% if (pet.lastVetVisit) { %>
+                <p><strong>Last Vet Visit:</strong> <%= new Date(pet.lastVetVisit).toLocaleDateString() %></p>
+            <% } %>
+            <p><strong>Added:</strong> <%= new Date(pet.createdAt).toLocaleDateString() %></p>
+        </div>
+    </div>
+
+    <% if (pet.notes) { %>
+        <div class="notes-section">
+            <h3><i class="fas fa-sticky-note"></i> Notes</h3>
+            <div class="notes-content">
+                <%= pet.notes %>
+            </div>
+        </div>
+    <% } %>
+
+    <div class="delete-section">
+        <form action="/pets/<%= pet._id %>?_method=DELETE" method="POST">
+            <button type="submit" class="btn btn-danger" 
+                    onclick="return confirm('Are you sure you want to delete this pet? This action cannot be undone.')">
+                <i class="fas fa-trash"></i> Delete Pet
+            </button>
+        </form>
+    </div>
+</div>
