@@ -1,0 +1,135 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADOPT-A-CUTIEPIE - Promote Pet Foster Homes</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">ADOPT-A-CUTIEPIE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#how-to">How to Foster</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero d-flex align-items-center">
+        <div class="container text-center">
+            <h1 class="display-4">Adopt a Cutiepie Today!</h1>
+            <p class="lead">Foster homes provide a lifeline to animals who are out of options. Join us in saving lives.</p>
+            <a href="#contact" class="btn btn-primary btn-lg">Get Involved</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Why Foster Pets?</h2>
+            <p class="text-center">Foster homes are essential because they offer temporary shelter to animals in need, bridging the gap between rescue and permanent adoption. They provide a lifeline to animals who are out of options, helping them recover, socialize, and find loving forever homes. Without fosters, many pets would face euthanasia due to overcrowded shelters. By fostering, you directly save lives and make a profound impact on animal welfare.</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Meet Our Cutiepies</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card gallery-card">
+                        <img src="images/pet1.jpg" class="card-img-top" alt="Cute Pet 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Fluffy</h5>
+                            <p class="card-text">A playful kitten waiting for a foster home.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card gallery-card">
+                        <img src="images/pet2.jpg" class="card-img-top" alt="Cute Pet 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Buddy</h5>
+                            <p class="card-text">An energetic puppy needing love.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card gallery-card">
+                        <img src="images/pet3.jpg" class="card-img-top" alt="Cute Pet 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Whiskers</h5>
+                            <p class="card-text">A gentle cat ready to be fostered.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Foster Section -->
+    <section id="how-to" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">How to Become a Foster Parent</h2>
+            <ol class="list-group list-group-numbered">
+                <li class="list-group-item">Fill out our application form.</li>
+                <li class="list-group-item">Attend a short orientation session.</li>
+                <li class="list-group-item">Receive supplies and support from our team.</li>
+                <li class="list-group-item">Welcome your cutiepie home!</li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <form id="contactForm">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <div id="formFeedback" class="mt-3"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 ADOPT-A-CUTIEPIE. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
